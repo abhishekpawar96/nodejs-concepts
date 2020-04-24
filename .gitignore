@@ -117,3 +117,6 @@ dist
 # certificate
 *.pem
 *.log.gz
+
+# os related
+.DS_Store

@@ -14,7 +14,12 @@ const server = require('https')
 // req: http.IncomingMessage
 server.on('request', (req, res) => {
     res.writeHead(200, {'content-type': 'text/plain'});
-    res.end('Hello world\n');
+
+    // curl -k --request GET --url 'https://localhost:443'
+    const src = fs.createReadStream('./big-file.log');
+    src.pipe(res);
+
+    // res.end('Hello world\n');
 });
 
 server.listen(443);

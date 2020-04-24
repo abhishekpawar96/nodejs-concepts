@@ -120,3 +120,6 @@ dist
 
 # os related
 .DS_Store
+
+# add-on
+addon-src/build

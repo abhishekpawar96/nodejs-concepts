@@ -13,3 +13,7 @@ require("./util");
 
 // bad practice but can be accessed
 console.log(badPracticeButCanBeAccessed);
+
+// npm install -g node-gyp
+// node-gyp configure
+// node-gyp build
